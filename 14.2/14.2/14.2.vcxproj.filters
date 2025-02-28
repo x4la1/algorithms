@@ -13,40 +13,14 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="test_data">
-      <UniqueIdentifier>{3111f9ff-6d69-467d-8306-742a264b2cb4}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="14.1.cpp">
+    <ClCompile Include="14.2.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt" />
     <Text Include="output.txt" />
-    <Text Include="input1.txt">
-      <Filter>test_data</Filter>
-    </Text>
-    <Text Include="input2.txt">
-      <Filter>test_data</Filter>
-    </Text>
-    <Text Include="input3.txt">
-      <Filter>test_data</Filter>
-    </Text>
-    <Text Include="output1.txt">
-      <Filter>test_data</Filter>
-    </Text>
-    <Text Include="output2.txt">
-      <Filter>test_data</Filter>
-    </Text>
-    <Text Include="output3.txt">
-      <Filter>test_data</Filter>
-    </Text>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Tests.bat">
-      <Filter>Исходные файлы</Filter>
-    </None>
   </ItemGroup>
 </Project>
