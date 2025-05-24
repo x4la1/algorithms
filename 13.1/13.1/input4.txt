@@ -1,3 +1,2 @@
-несколько входждение
 abc def ghi jkl
 test4.txt

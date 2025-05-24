@@ -1,4 +1,19 @@
-﻿#include <chrono>
+﻿/*
+	1.В последовательности чисел a1, a2, a3, ... задан первый член, а остальные вычисляются по формуле ai = (ai - 1)2 mod M + 1. Найти N-й член последовательности.
+	Ограничения: 1 ≤ M ≤ 10000,  2 ≤ N ≤ 10^18, 0 ≤ a1 ≤ M.
+	Ввод из файла INPUT.TXT. В первой строке находятся числа M, N и a1 , разделённые пробелом.
+	Вывод в файл OUTPUT.TXT. Вывести одно число - aN.
+	Примеры 
+	Ввод 1      Ввод 2
+	10000 3 4   7777 2000000000 0
+	Вывод 1     Вывод 2
+	290         3834
+
+	2.Лебедев Д.А ПС-23
+	3.Visual Studio 2019, C++
+*/
+
+#include <chrono>
 #include <fstream>
 #include <iostream>
 #include <vector>
@@ -18,8 +33,6 @@ int FindNum(int m, uint64_t n, int a1)
 		current = (current * current) % m + 1;
 		position = std::find(nums.begin(), nums.end(), current);
 
-		std::cout << current << "\n";
-
 		if (position != nums.end())
 		{
 			beginCyclePosition = std::distance(nums.begin(), position);
@@ -32,6 +45,7 @@ int FindNum(int m, uint64_t n, int a1)
 
 			break;
 		}
+
 		passedNums += 1;
 		nums.push_back(current);
 	}

@@ -67,7 +67,6 @@ std::pair<uint32_t, uint32_t> FindLineAndPosition(uint32_t pos, const std::vecto
 std::vector<std::pair<uint32_t, uint32_t>> FindSubstring(const std::string& pattern, const std::string& filename)
 {
 	uint64_t patternHash = Hash(pattern);
-	std::cout << patternHash << "\n";
 	std::vector<std::pair<uint32_t, uint32_t>> result{};
 	uint32_t m = pattern.length();
 	std::ifstream input(filename);

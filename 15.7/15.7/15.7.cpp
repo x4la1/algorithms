@@ -5,6 +5,7 @@
 	2)Лебедев Денис ПС-23
 	3)Visual Studio C++
 */
+//out of range
 
 #include <iostream>
 #include <fstream>
@@ -12,7 +13,6 @@
 #include <algorithm>
 
 const uint32_t MAX_C = 91;
-const uint32_t MAX_N = 200;
 
 int main()
 {
@@ -41,20 +41,20 @@ int main()
 
 	for (uint32_t K = N - 1; K >= 1; --K)
 	{
-		for (uint32_t M = 1; M <= MAX_C; ++M)
+ 		for (uint32_t M = 1; M <= MAX_C; ++M)
 		{
-			if (K + 2 * M > N)
+			if (K + 2 * M >= N)
 			{
 				S[K][M] = R[K];
 			}
 			else
 			{
 				uint64_t minimum = 1e10;
-				int maxL = std::min(2 * M, N - K + 1);
-				for (int L = 1; L <= maxL; ++L)
+				uint32_t maxL = std::min(2 * M, N - K);
+				for (uint32_t L = 1; L <= maxL; ++L)
 				{
 					uint64_t opponentScore = S[K + L][L];
-					minimum = std::min(minimum, opponentScore);
+					minimum = std::min(minimum, opponentScore); //K=107 M ~ 45 out of range
 				}
 				S[K][M] = R[K] - minimum;
 			}

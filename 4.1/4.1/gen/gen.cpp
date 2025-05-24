@@ -4,7 +4,7 @@ int main()
 {
 	std::ofstream out("xd.txt");
 
-	for (int i = 0; i < 4997; ++i)
+	for (int i = 0; i < 999997; ++i)
 	{
 		out << "1 ";
 	}

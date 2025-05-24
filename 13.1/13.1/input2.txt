@@ -1,3 +1,2 @@
-несколько строк
 ij klmn op
 test2.txt
