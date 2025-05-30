@@ -50,11 +50,11 @@ int main()
 			else
 			{
 				uint64_t minimum = 1e10;
-				uint32_t maxL = std::min(2 * M, N - K);
+				uint32_t maxL = std::min(2 * M, std::min(N - K, MAX_C));
 				for (uint32_t L = 1; L <= maxL; ++L)
 				{
 					uint64_t opponentScore = S[K + L][L];
-					minimum = std::min(minimum, opponentScore); //K=107 M ~ 45 out of range
+					minimum = std::min(minimum, opponentScore);
 				}
 				S[K][M] = R[K] - minimum;
 			}
