@@ -4,7 +4,7 @@
 
 using Table = std::vector<std::vector<uint32_t>>;
 
-int32_t FindMinInVectorOfInversions(const std::vector<int32_t>& vec, uint32_t cnt)
+int32_t FindMinInVectorOfInversions(const std::vector<int32_t>& vec)
 {
 	for (int i = vec.size() - 1; i >= 0; --i)
 	{

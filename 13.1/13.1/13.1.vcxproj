@@ -146,19 +146,8 @@
     <ClCompile Include="13.1.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="13.1.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="input1.txt" />
-    <Text Include="input2.txt" />
-    <Text Include="input3.txt" />
-    <Text Include="input4.txt" />
-    <Text Include="output.txt" />
-    <Text Include="test.txt" />
-    <Text Include="test1.txt" />
-    <Text Include="test2.txt" />
-    <Text Include="test3.txt" />
-    <Text Include="test4.txt" />
+    <Text Include="INPUT.txt" />
+    <Text Include="OUTPUT.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
